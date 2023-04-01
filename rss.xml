@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://release-jf.github.io/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://release-jf.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>topjf</title>
+    <link>https://release-jf.github.io/</link>
+    <description>꧁「小牛专属笔记本」꧂</description>
+    <language>zh-CN</language>
+    <pubDate>Sat, 01 Apr 2023 16:52:42 GMT</pubDate>
+    <lastBuildDate>Sat, 01 Apr 2023 16:52:42 GMT</lastBuildDate>
+    <generator>vuepress-plugin-feed2</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>Linux</category>
+    <category>开发工具</category>
+    <item>
+      <title>Linux发送邮件</title>
+      <link>https://release-jf.github.io/linux/emails.html</link>
+      <guid>https://release-jf.github.io/linux/emails.html</guid>
+      <source url="https://release-jf.github.io/rss.xml">Linux发送邮件</source>
+      <description>Linux发送邮件</description>
+      <category>Linux</category>
+      <pubDate>Sat, 01 Apr 2023 16:20:23 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> Linux发送邮件</h1>
+<!-- more -->
+<h2> 使用 mail 命令</h2>
+<p>mail 是 mailutils（在 Debian 上）和 mailx（在 RedHat 上）软件包的一部分，用于在命令行上处理邮件。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>现在可以使用 mail 命令发送带有附件的电子邮件，示例如下。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在上面的命令中，选项</p>
+<ul>
+<li>-s - 指定邮件主题。</li>
+<li>-A - 用于附加文件。</li>
+</ul>
+<p>你也可以按照以下方式发送现有消息：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 使用 mailx 命令</h2>
+<p>mailx 更像 mutt 命令，它也是 mailutils（在 Debian 上）软件包的一部分。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>现在可以使用 mailx 命令从命令行发送带有附件的邮件。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 使用 mutt 命令</h2>
+<p>mutt 是一款流行的轻量级 Linux 命令行邮件客户端。如果你的系统上没有它，请输入以下命令安装它：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>你可以使用以下 mutt 命令发送带有附件的电子邮件。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>其中选项:</p>
+<ul>
+<li>-s - 表示邮件主题。</li>
+<li>-a - 标识附件。</li>
+</ul>
+<h2> 使用 mpack 命令</h2>
+<p>mpack 将指定文件编码为一个或多个 MIME 消息，并将该消息发送到一个或多个接收者，
+或将其写入命名文件或文件集，或将其发布到一组新闻组。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>要发送带有附件的消息，请运行以下命令。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><a href="https://mp.weixin.qq.com/s/bIcNFHHs6-10cW7O6bg4_A" target="_blank" rel="noopener noreferrer">参考地址</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>启动Java项目脚本</title>
+      <link>https://release-jf.github.io/linux/start-java.html</link>
+      <guid>https://release-jf.github.io/linux/start-java.html</guid>
+      <source url="https://release-jf.github.io/rss.xml">启动Java项目脚本</source>
+      <description>前提：本例中是基于 java-&amp;gt;jar与lib 依赖分离，且处于同级目录；如果不是，可以自己修改配置文件（nohup java -jar xxx.jar） maven打包配置jar与lib依赖分离 (https://blog.csdn.net/qq_42476834/article/details/112507565) 使用示例 语法：sh start...</description>
+      <category>Linux</category>
+      <pubDate>Sat, 01 Apr 2023 16:20:23 GMT</pubDate>
+      <content:encoded><![CDATA[<!-- more -->
+<p><strong>前提</strong>：本例中是基于 java-&gt;jar与lib 依赖分离，且处于同级目录；如果不是，可以自己修改配置文件（<code>nohup java -jar xxx.jar</code>）</p>
+<p><a href="https://blog.csdn.net/qq_42476834/article/details/112507565" target="_blank" rel="noopener noreferrer">maven打包配置jar与lib依赖分离</a></p>
+<h2> 使用示例</h2>
+<p><strong>语法</strong>：<code>sh start.sh [options] [jar-version] [ADD_PORT]</code></p>
+<p><em>options</em>：</p>
+<ul>
+<li>start：启动服务</li>
+<li>stop：停止服务</li>
+<li>restart：重启服务</li>
+<li>status：查看服务状态</li>
+<li>debug：开启远程debug控制</li>
+</ul>
+<p><em>jar-version</em>：Java项目jar包名称，无需输入<code>.jar</code>后缀</p>
+<p><em>ADD_PORT</em>：options 为 debug 调试模式时用，默认监听端口为 <em>51135</em>，可自定义</p>
+<p>启动程序：<code>sh start.sh start test-1.x.x</code></p>
+<p>debug启动：<code>sh start.sh debug test-1.x.x</code> |
+<code>sh start.sh debug test-1.x.x 51235</code></p>
+<p>重启程序：<code>sh start.sh restart test-1.x.x</code></p>
+<p>查看运行状态：<code>sh start.sh status test-1.x.x</code></p>
+<p>关闭程序：<code>sh start.sh stop test-1.x.x</code></p>
+<p>获取使用教程：<code>sh start.sh -h</code></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>start.sh脚本</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>maven管理</title>
+      <link>https://release-jf.github.io/tools/maven.html</link>
+      <guid>https://release-jf.github.io/tools/maven.html</guid>
+      <source url="https://release-jf.github.io/rss.xml">maven管理</source>
+      <description>安装与配置 Windows、Linux 配置 Maven3.6、gradle 阿里下载源 Maven3.X 下载地址 (https://maven.apache.org/download.cgi); maven nginx导航资源 (https://mirrors.bfsu.edu.cn/apache/maven/); pom依赖查询地址： maven...</description>
+      <category>开发工具</category>
+      <pubDate>Sat, 01 Apr 2023 16:20:23 GMT</pubDate>
+      <content:encoded><![CDATA[<!-- more -->
+<h2> 安装与配置</h2>
+<p>Windows、Linux 配置 Maven3.6、gradle 阿里下载源</p>
+<ul>
+<li><a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener noreferrer">Maven3.X 下载地址</a></li>
+<li><a href="https://mirrors.bfsu.edu.cn/apache/maven/" target="_blank" rel="noopener noreferrer">maven nginx导航资源</a></li>
+</ul>
+<p>pom依赖查询地址：</p>
+<ul>
+<li><a href="https://mvnrepository.com/" target="_blank" rel="noopener noreferrer">maven 官网 仓库</a></li>
+<li><a href="https://developer.aliyun.com/mvn/search" target="_blank" rel="noopener noreferrer">maven 阿里云 仓库</a></li>
+</ul>
+<h2> win10</h2>
+<h3> 自定义本地仓库存储地址</h3>
+<p>1、打开配置文件：apache-maven-3.6.3 -&gt; conf -&gt; settings.xml</p>
+<div class="language-xml line-numbers-mode" data-ext="xml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 配置阿里仓库下载源</h3>
+<p><a href="https://developer.aliyun.com/mvn/guide" target="_blank" rel="noopener noreferrer">maven | gradle  阿里云官网配置指南</a></p>
+<div class="language-xml line-numbers-mode" data-ext="xml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>还有一步：环境配置，在里省略</p>
+<h2> linux环境</h2>
+<h3> 环境配置sudo vim /etc/profile</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 测试</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 常用命令</h2>
+<p>清空文件：mvn clean</p>
+<p>编译项目：mvn compile</p>
+<p>打包jar：mvn package</p>
+<p>打包并部署到本地maven目录里：mvn install</p>
+<p><code>.jar.original</code> 结尾文件</p>
+<blockquote>
+<p>.jar.original 是普通 jar 包，不包含依赖</p>
+<p>.jar 是可执行 jar 包，包含了 pom 中的所有依赖，可以直接用 <code>java -jar</code> 命令执行</p>
+<p>如果是部署，就用 .jar</p>
+<p>如果是给别的项目用，就要给 <code>.jar.original</code> 这个包</p>
+</blockquote>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
